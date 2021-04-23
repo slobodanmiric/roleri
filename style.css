@@ -10,6 +10,7 @@
     --lightgray: lightgray;
     --bg: #f5f5f5;
     --transition: .3s ease;
+    --boxShadow: 0 2px 1px var(--lightgray);
 }
 /*****************
 basic styles
@@ -69,6 +70,11 @@ button {
 }
 h2 {
     font-size: 2.5rem;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
 }
 /*****************
 header
@@ -145,3 +151,44 @@ uvod
 .uvod p {
     font-size: 1.5rem;
 }
+/*****************
+modeli
+*****************/ 
+.modeli {
+    outline: 1px solid var(--lightgray);
+    border-radius: 10px;
+    background: var(--white);
+    margin-top: 50px;
+    padding: 80px;
+    box-shadow: var(--boxShadow);
+}
+.modeli article {
+    width: 50%;
+    float: left;
+    padding: 40px;
+    text-align: center;
+}
+.modeli i {
+    background: var(--accents);
+    padding: 30px;
+    border-radius: 50%;
+    color: var(--black);
+}
+.modeli h3 {
+    font-size: 3rem;
+    padding: 20x 0;
+}
+.modeli p {
+    font-size: 1.3rem;
+}
+.modeli article:nth-child(1),
+.modeli article:nth-child(3) {
+    border-right: 2px solid var(--lightgray);
+}
+.modeli article:nth-child(1),
+.modeli article:nth-child(2) {
+    border-bottom: 2px solid var(--lightgray);
+}
+
+
+
