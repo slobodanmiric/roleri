@@ -76,6 +76,9 @@ h2 {
     content: "";
     clear: both;
 }
+ul {
+    list-style: none;
+}
 /*****************
 header
 *****************/ 
@@ -139,6 +142,7 @@ uvod
     background-position: center bottom;
     background-size: cover;
     height: 500px;
+    border-radius: 0 0 10px 10px;
 }
 .uvod h2::after {
     display: block;
@@ -189,6 +193,69 @@ modeli
 .modeli article:nth-child(2) {
     border-bottom: 2px solid var(--lightgray);
 }
+/*****************
+blog
+*****************/ 
+.blog {
+    margin-top: 50px;
+    text-align: center;
+}
+.blog img {
+    width: 100%;
+}
+.blog article {
+    width: 47%;
+    background: var(--white);
+    box-shadow: var(--boxShadow);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.blog article:first-child {
+    float: left;
+}
+.blog article:last-child {
+    float: right;
+}
+.blog .text {
+    padding: 40px;
+}
+.blog h3 {
+    font-size: 2rem;
+}
+.blog p {
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+.blog .btnGreen:hover {
+    background: black;
+    border: 2px solid var(--black);
+    color: var(--white);
+}
+/*****************
+footer
+*****************/ 
+footer {
+    background: var(--accents);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+footer ul li {
+    display: inline-block;
+    margin: 10px;
+}
+footer a {
+    color: var(--black);
+    font-size: 1.5rem;
+}
+footer a:hover {
+    color: var(--headings);
+}
+
+
+
+
+
 
 
 
